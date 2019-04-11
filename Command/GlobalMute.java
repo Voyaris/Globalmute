@@ -80,7 +80,7 @@ public class GlobalMute implements CommandExecutor, Listener {
 		if (Status) {
 			if (!p.hasPermission(Messages.getMessage("Permission.ByPass"))) {
 				e.setCancelled(true);
-				p.sendMessage(Messages.getMessage("Activated").replace("%Prefix%", Messages.getMessage("Prefix")));
+				p.sendMessage(Messages.getMessage("Inactive").replace("%Prefix%", Messages.getMessage("Prefix")));
 			}
 		}
 	}
